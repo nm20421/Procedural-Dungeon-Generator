@@ -153,12 +153,13 @@ class Game:
 
     def dungeon_controls(self,res):
         #Dungeon controls:
-        self.mean = 20
-        self.std = 20
+        self.mean = 30 # mean number of rooms
+        self.std = 20  # standard deviation of number of rooms.
+        self.extraPaths = 0.15 # % of 'unecessary' paths that are readded to make a more interesting dungeon.
         #Circle:
         self.origin = [res[0]/2,res[1]/2]
         self.radius = 150
-        self.extraPaths = 0.15
+        
 
 
 
